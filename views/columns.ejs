@@ -1,0 +1,103 @@
+
+<div class="table-container">
+
+  <div class="colA">
+    <div class="header">
+      Column A
+    </div>
+    <table>
+      <% for (var i=0; i < rows ; i++) { %>
+      <tr>
+        <% for (var j=0; j<3; j++) { %>
+
+        <% if (i*10 + numArray[j] <= num) { %>
+          <% if (j === 0) { %>
+           <td style="background-color: #66CDAA;"> <%= i*10+numArray[j] %> </td>
+          <% } if (j === 2) { %>
+           <td style="background-color: #32CD32;"> <%= i*10+numArray[j] %> </td>
+          <% }  if (j === 1) { %>
+          <td> <%= i*10+numArray[j] %> </td>
+         <% } %>
+
+        <%  } else {  %>
+          <% if (j === 0) { %>
+           <td style="background-color: #66CDAA;">  </td>
+          <% } if (j === 2) { %>
+           <td style="background-color: #32CD32;">  </td>
+          <% }  if (j === 1) { %>
+          <td>  </td>
+         <% } %>
+        <%  }  %>
+
+        <%}%>
+              </tr>
+            <%  }  %>
+    </table>
+  </div>
+
+  <div class="colB">
+    <div class="header">
+      Column B
+    </div>
+    <table>
+      <% for (var i=0; i < rows ; i++) { %>
+      <tr>
+        <% for (var j=3; j<7; j++) { %>
+
+        <% if (i*10 + numArray[j] <= num) { %>
+          <% if (j === 3 || j === 6) { %>
+           <td style="background-color: #32CD32;"> <%= i*10+numArray[j] %> </td>
+          <% }  else { %>
+            <td> <%= i*10+numArray[j] %> </td>
+          <%}%>
+
+        <%  } else {  %>
+          <%  if (j === 3 || j === 6) { %>
+           <td style="background-color: #32CD32;">  </td>
+          <% }  else  { %>
+          <td>  </td>
+         <% } %>
+        <%  }  %>
+
+        <%}%>
+              </tr>
+            <%  }  %>
+    </table>
+  </div>
+
+
+  <div class="colC">
+    <div class="header">
+      Column C
+    </div>
+    <table>
+      <% for (var i=0; i < rows ; i++) { %>
+      <tr>
+        <% for (var j=7; j<=numArray.length; j++) { %>
+
+        <% if (i*10 + numArray[j] <= num) { %>
+          <% if (j === 9) { %>
+           <td style="background-color: #66CDAA;"> <%= i*10+numArray[j] %> </td>
+          <% } if (j === 7) { %>
+           <td style="background-color:	#32CD32;"> <%= i*10+numArray[j] %> </td>
+          <% }  if (j === 8) { %>
+          <td> <%= i*10+numArray[j] %> </td>
+         <% } %>
+
+        <%  } else {  %>
+          <% if (j === 9) { %>
+           <td style="background-color: #66CDAA;">  </td>
+          <% } if (j === 7) { %>
+           <td style="background-color:	#32CD32;">  </td>
+          <% }  if (j === 8) { %>
+          <td>  </td>
+         <% } %>
+        <%  }  %>
+
+        <%}%>
+              </tr>
+            <%  }  %>
+    </table>
+  </div>
+
+</div>

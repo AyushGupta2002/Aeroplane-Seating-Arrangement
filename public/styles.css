@@ -1,0 +1,88 @@
+
+h6 {
+  margin-left: 18px;
+}
+h5 {
+  margin: 20px auto;
+}
+
+.input {
+  border-color: black;
+}
+
+.button{
+  margin-left: 70px;
+  background: #ffe5b4;
+  color: black;
+  border-color: black;
+}
+
+
+.button:hover {
+  background: orange;
+}
+
+.parent{
+  height : auto;
+  width: auto;
+  margin: 0px 30px 40px;
+  /* border: 1px solid black; */
+}
+
+.child1{
+  margin: 10px 60px;
+}
+
+.heading{
+  height: 70px;
+  width: 97% ;
+  border: 1px solid black;
+  margin-left: 17px;
+  margin-top: 15px;
+  border-radius: 4px;
+  background-color: #CF9FFF;
+  text-align: center;
+}
+
+
+/* -------------------------------------Body.ejs CSS------------------------------- */
+
+
+.tables {
+  margin-left: 17px;
+  margin-top: 20px;
+  margin-right: 7px;
+}
+
+td {
+  border:0.1px solid black;
+  background-color: orange;
+  color: black;
+  width: 100px;
+  text-align: center;
+  border-collapse: collapse;
+  height: 1.5rem;
+  font-weight: 500;
+}
+
+
+.table-container {
+  display: flex;
+  border-radius: 4px;
+
+}
+
+.header{
+  width: 100%;
+  text-align: center;
+  background-color : #CF9FFF;
+  border: 1px solid black;
+  padding: 8px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  border-radius: 4px;
+}
+
+.colB {
+  margin: 0px 150px;
+}
